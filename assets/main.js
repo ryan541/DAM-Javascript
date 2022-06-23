@@ -1,5 +1,6 @@
-function takevalue()
-{
-    var txt=document.getElementById("txt").value;
-    document.write("Hello :"+txt+"Welcome to Bootcamp");
-}
+const welcome = () => {
+    const inputValue = document.querySelector('input').value
+    const generatedElement = document.createElement('p');
+    generatedElement.innerHTML = `<p>Hello ${inputValue}, welcome to the bootcamp</p>`;
+    document.body.appendChild(generatedElement);
+  }
